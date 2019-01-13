@@ -13,7 +13,6 @@ class AwesomeMovieSpider(CrawlSpider):
 
     links = LinkExtractor(restrict_xpaths='//div[@class="recommendations-bd"]/dl//a')
 
-
     rules = (
         Rule(link_extractor=links, callback="parse_page", follow=True),
     )
