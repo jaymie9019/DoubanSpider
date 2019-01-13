@@ -14,3 +14,7 @@ class MovieItem(scrapy.Item):
     summary = scrapy.Field()
     score = scrapy.Field()
 
+
+class PageItem(scrapy.Item):
+    url = scrapy.Field()
+    text = scrapy.Field()
